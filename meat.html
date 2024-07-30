@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meat Purchase</title>
+    <style>
+        .orange {
+            background-color:rgb(230,200,255) ;
+            width: 100%;
+            height: 100px;
+            font-size: 50px;
+            position: relative;
+        }
+        .orange img {
+            height: 100%;
+        }
+        .orange-text {
+            position: absolute;
+            top: 25px;
+            left: 11.5%;
+            transform: translateX(-50%);
+        }
+        .fruit-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .fruit{
+            width: calc(20% - 20px);
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+        }
+        .fruit:hover{
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.438); 
+        }
+        .fruit img{
+            max-width: 100%;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+        .price {
+            margin-top: 5px;
+            color: #888;
+        }
+
+        button {
+            background-color: rgb(151,92,199);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color:rgb(123,59,176) ;
+        }
+    </style>
+    <!-- <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .orange {
+            height: 12%;
+            width: 100%;
+            background-color: rgb(230,200,255);
+            display: flex;
+               box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+            position: relative;
+        }
+
+        .orange img {
+            height: 100px;
+            width: 100px;
+             Margin-right:2px;
+        }
+
+        .orange-text {
+            
+            font-size: 50px;
+         
+        }
+
+        .fruit-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .fruit {
+            width: calc(20% - 20px);
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+        }
+
+        .fruit img {
+            max-width: 100%;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .fruit-name {
+            font-weight: bold;
+        }
+
+        .price {
+            margin-top: 5px;
+            color: #888;
+        }
+
+        button {
+            background-color: rgb(151,92,199);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(123,59,176);
+        }
+    </style> -->
+</head>
+<body>
+    <div class="orange">
+        <img src="images/meatlogo.jpg">
+        <span class="orange-text">Meat</span>
+    </div>
+
+    <div class="fruit-container">
+        <div class="fruit">
+            <img src="images/chick.jpg" alt="Chicken">
+            <div class="fruit-name">Chicken</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/crab.jpg" alt="Crab">
+            <div class="fruit-name">Crab</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/meat.jpg" alt="Mutton">
+            <div class="fruit-name">Mutton</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/lamb.jpg" alt="Lamb">
+            <div class="fruit-name">Lamb</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/salmon.jpg" alt="Salmon">
+            <div class="fruit-name">Salmon</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+ <div class="fruit">
+            <img src="images/tuna.jpg" alt="Tuna">
+            <div class="fruit-name">Tuna</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+ <div class="fruit">
+            <img src="images/shrimp.jpg" alt="Shrimps">
+            <div class="fruit-name">Shrimps</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+<div class="fruit">
+            <img src="images/lobster.jpg" alt="Lobster">
+            <div class="fruit-name">Lobster</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

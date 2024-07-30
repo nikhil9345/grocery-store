@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy  Purchase</title>
+    <style>
+        .orange {
+            background-color: rgb(157,177,236);
+            width: 100%;
+            height: 100px;
+            font-size: 50px;
+            position: relative;
+        }
+        .orange img {
+            height: 100%;
+        }
+        .orange-text {
+            position: absolute;
+            top: 25px;
+            left: 16%;
+            transform: translateX(-50%);
+        }
+        .fruit-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .fruit{
+            width: calc(20% - 20px);
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+        }
+        .fruit:hover{
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.438); 
+        }
+        .fruit img{
+            max-width: 100%;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+        .price {
+            margin-top: 5px;
+            color: #888;
+        }
+
+        button {
+            background-color:rgb(100,131,219) ;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(73,96,167);
+        }
+    </style>
+    <!-- <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .orange {
+            height: 12%;
+            width: 100%;
+            background-color: rgb(157,177,236);
+            display: flex;
+               box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+            position: relative;
+        }
+
+        .orange img {
+            height: 100px;
+            width: 100px;
+             Margin-right:2px;
+        }
+
+        .orange-text {
+            
+            font-size: 50px;
+         
+        }
+
+        .fruit-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .fruit {
+            width: calc(20% - 20px);
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+        }
+
+        .fruit img {
+            max-width: 100%;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .fruit-name {
+            font-weight: bold;
+        }
+
+        .price {
+            margin-top: 5px;
+            color: #888;
+        }
+
+        button {
+            background-color: rgb(100,131,219);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(73,96,167);
+        }
+    </style> -->
+</head>
+<body>
+    <div class="orange">
+        <img src="images/dairy.png">
+        <span class="orange-text">Dairy&Eggs</span>
+    </div>
+
+    <div class="fruit-container">
+        <div class="fruit">
+            <img src="images/milk.jpg" alt="Milk">
+            <div class="fruit-name">Milk</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/curd.jpg" alt="Curd">
+            <div class="fruit-name">Curd</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/cheese.jpg" alt="Cheese">
+            <div class="fruit-name">Cheese</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/butter.jpg" alt="Butter">
+            <div class="fruit-name">Butter</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/paneer.jpg" alt="Paneer">
+            <div class="fruit-name">Paneer</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+ <div class="fruit">
+            <img src="images/cream.jpg" alt="Cream">
+            <div class="fruit-name">Cream</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+ <div class="fruit">
+            <img src="images/condensed.jpg" alt="CondensedMilk">
+            <div class="fruit-name">Condensed Milk</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+<div class="fruit">
+            <img src="images/eggs.jpg" alt="Eggs">
+            <div class="fruit-name">Eggs</div>
+            <div class="price">₨.200 per kg</div>
+            <button>Add to Cart</button>
+        </div>
+
+
+    </div>
+</body>
+</html>

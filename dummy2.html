@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiving Page</title>
+</head>
+<body>
+    <div class="page2"></div>
+    <script>
+        // Get the data from localStorage
+        var dataToSend = localStorage.getItem('dataToSend');
+        // Check if data is available
+        if (dataToSend) {
+            // Update the container with the received data
+            document.querySelector('.page2').innerHTML = dataToSend;
+        }
+    </script>
+</body>
+</html>

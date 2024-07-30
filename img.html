@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            .container {
+                padding: 2rem;
+            }
+            .s-r {
+                position: relative;
+                max-width: 48rem;
+                margin: 0 auto;
+            }
+            .slider {
+                display: flex;
+                aspect-ratio: 16 / 9;
+                overflow-x: hidden; /* Hide scrollbar */
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+                border-radius: 0.5rem;
+                white-space: nowrap;
+            }
+            .slider img {
+                scroll-snap-align: start;
+                object-fit: cover;
+                width: 100%;
+            }
+            .s-nav {
+                display: flex;
+                column-gap: 1rem;
+                position: absolute;
+                bottom: 1.25rem;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+            .s-nav a {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: #fff;
+                opacity: 0.75;
+                transition: opacity ease 250ms;
+            }
+            .s-nav a:hover {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div class="s-r">
+                <div class="slider">
+                    <img id="s1" src="images/login img.png" >
+                    <img id="s2" src="images/login img.png" >
+                    <img id="s3" src="images/login img.png" >
+                </div>
+                <div class="s-nav">
+                    <a href="#s1"></a>
+                    <a href="#s2"></a>
+                    <a href="#s3"></a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function scrollLeft() {
+                const slider = document.querySelector('.slider');
+                slider.scrollLeft += slider.offsetWidth;
+            }
+            setInterval(scrollLeft, 2000);
+        </script>
+    </body>
+</html>

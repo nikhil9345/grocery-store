@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            .head{
+                background-color: rgb(203, 255, 238);
+                height: 125px;
+                width: 100%;
+                display:flex;
+            }
+            .head b{
+                padding-top: 30px;
+                padding-left: 20px;
+                font-size: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <img src="images/cart.png" height="100%" width="auto">
+            <b>Cart</b>
+        </div>
+        <div class="data"></div>
+        <script>
+            // Get the data from localStorage
+            var dataToSend = localStorage.getItem('dataToSend');
+            // Check if data is available
+            if (dataToSend) {
+                // Update the container with the received data
+                document.querySelector('.data').innerHTML = dataToSend;
+            }
+        </script>
+    </body>
+</html>

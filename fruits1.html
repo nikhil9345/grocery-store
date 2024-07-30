@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Purchase</title>
+    <style>
+        .orange {
+            background-color: rgb(140, 217, 125);
+            width: 100%;
+            height: 100px;
+            font-size: 50px;
+            position: relative;
+        }
+        .orange img {
+            height: 100%;
+        }
+        .orange-text {
+            position: absolute;
+            top: 25px;
+            left: 11.5%;
+            transform: translateX(-50%);
+        }
+        .fruit-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .fruit{
+            width: calc(20% - 20px);
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+        }
+        .fruit:hover{
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.438); 
+        }
+        .fruit img{
+            max-width: 100%;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+        .price {
+            margin-top: 5px;
+            color: #888;
+        }
+
+        button {
+            background-color: rgb(93,196,79);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(21,168,50);
+        }
+    </style>
+</head>
+<body>
+    <div class="orange">
+        <img src="images/f.PNG">
+        <span class="orange-text">Fruits</span>
+    </div>
+
+    <div class="fruit-container">
+        <div class="fruit">
+            <img src="images/apple.jpg" alt="Apple">
+            <div class="fruit-name">Apple</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function1()">Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/banana.jpg" alt="Banana">
+            <div class="fruit-name">Banana</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function2()">Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/orange.jpg" alt="Orange">
+            <div class="fruit-name">Orange</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function3()">Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/mango.jpg" alt="Mango">
+            <div class="fruit-name">Mango</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function4()">Add to Cart</button>
+        </div>
+
+        <div class="fruit">
+            <img src="images/Pomegranate.jpg" alt="Pomegranate">
+            <div class="fruit-name">Pomegranate</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function5()">Add to Cart</button>
+        </div>
+ <div class="fruit">
+            <img src="images/grapes.jpg" alt="Grapes">
+            <div class="fruit-name">Grapes</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function6()">Add to Cart</button>
+        </div>
+ <div class="fruit">
+            <img src="images/papaya.jpg" alt="Papaya">
+            <div class="fruit-name">Papaya</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function7()">Add to Cart</button>
+        </div>
+<div class="fruit">
+            <img src="images/straw.jpg" alt="Strawberry">
+            <div class="fruit-name">Strawberry</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function8()">Add to Cart</button>
+        </div>
+<div class="fruit">
+            <img src="images/watermelon.jpg" alt="Watermelon">
+            <div class="fruit-name">Watermelon</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function9()">Add to Cart</button>
+        </div>
+<div class="fruit">
+            <img src="images/kiwi.jpg" alt="Kiwi">
+            <div class="fruit-name">Kiwi</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function10()">Add to Cart</button>
+        </div>
+        <div class="fruit">
+            <img src="images/lychee.jpg" alt="Litchi">
+            <div class="fruit-name">Litchi</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function11()">Add to Cart</button>
+        </div>
+        <div class="fruit">
+            <img src="images/musk.jpg" alt="Muskmelon">
+            <div class="fruit-name">Muskmelon</div>
+            <div class="price">₨.200 per kg</div>
+            <button onclick="function12()">Add to Cart</button>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
